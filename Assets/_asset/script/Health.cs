@@ -12,8 +12,8 @@ public class Health : MonoBehaviour
         mySlider.value = initialValue;
     }
 
-    public void OnSliderValueChanged(float newValue)
+    void Update()
     {
-        Debug.Log("Giá trị mới của slider: " + newValue);
+        mySlider.value = initialValue;
     }
 }
